@@ -1,0 +1,188 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+
+
+// string s="fbhwbhf";
+// for(auto c : s)
+// {
+//     cout<<c<<" ";
+// }
+
+// vector<int> arr;
+// arr.push_back(1);
+// arr.push_back(2);
+// arr.push_back(3);
+// arr.push_back(4);
+// arr.push_back(5);
+// for(auto z:arr){
+//     cout<<z<<"";
+// }
+
+// int n=123;
+// int num=123;
+// int digit,rev=0;
+// while(num!=0){
+//     digit=num%10;
+//     rev=(rev*10)+digit;
+//     num=num/10;
+
+// }
+// cout<<num;
+// cout<<"the reverse of number is"<<rev;
+// if(n==rev)
+//  cout<<"it is a palindrome"<<endl;
+// else
+//  cout<<"it is not a palindroem";
+
+// char name[]="supreet";
+// int count=0;
+// for(int i=0;i<name[i]!='\0';i++){
+// count++;
+// }
+// int s=0;
+// int e=count-1;
+// while(s<e){
+//     swap(name[s],name[e]);
+//     s++;
+//     e--;
+
+// }
+// for(int i=0;i<name[i]!='\0';i++){
+// cout<<name[i];
+// }
+// string s ="asddsa";
+// int n=s.length()-1;
+// int e=0;
+// int flag=1;
+// while(e<n)
+// {
+//     if(s[e]!=s[n])
+//       flag=0;
+//     e++;
+//     n--;
+// }
+// if(flag==1)
+// cout<<"Palindrome"<<endl;
+// else
+// cout<<"not a Palindrome"<<endl;
+
+// string s="gavvcdhbv";
+// string temp="";
+// for(int i=0;i<s.length();i++)
+// {
+//     temp.push_back(s[i]);
+// }
+// cout<<temp;
+
+// string s="My name is";
+// string temp="";
+// for(int i=0;i<s.length();i++)
+// {
+//     if(s[i]==' ')
+//     {
+//         temp.push_back('z');
+//     }else{
+//         temp.push_back(s[i]);
+//     }
+   
+// }
+// cout<<temp;
+
+// int a=12;
+// int b=23;
+// int temp=a;
+// a=b;
+// b=temp;
+// cout<<a<<" "<<b;
+
+// int a=0,b=1;
+// cout<<a<<" "<<b<<" ";
+// for(int i=0;i<10;i++)
+// {
+//     int c=a+b;
+//     cout<<c<<" ";
+//     a=b;
+//     b=c;
+
+// }
+
+// int a;
+// cin>>a;
+// bool isPrime=1;
+// for(int i=2;i<4;i++)
+
+// {
+//     if(a%i==0)
+//     {
+//         isPrime=0;
+//     }
+// }
+// if(isPrime==1)
+// cout<<"prime";
+// else
+// cout<<"not prime";
+
+//sum of digits and reverse
+// int a=4254;
+// int sum=0;
+// int rev=0;
+// while(a!=0)
+// {
+//     int digit=a%10;
+//      rev=(rev*10)+digit;
+//     sum=sum+digit;
+//     a=a/10;
+// }
+// int answer=sum;
+// cout<<rev;
+
+//reverse an array
+// int a[]={3,5,2,6,8,9};
+// int size=sizeof(a)/sizeof(int);
+// //cout<<size;
+// for(int i=0;i<size;i++)
+// {
+//     int s=0;
+//     int e=size-1;
+// while(s<e){
+//     swap(a[s],a[e]);
+//     s++;
+//     e--;
+
+// }
+
+// }
+// for(int i=0;i<size;i++){
+//     cout<<a[i]<<" ";
+// }
+
+// int a[]={5,3,5,3,7,9};
+// int ans=0;
+// for(int i=0;i<6;i++)
+// {
+//     ans=ans^a[i];
+// }
+// cout<<ans;
+
+//binary search
+int arr[]={1,2,3,4,5,6};
+int key=5,ans;
+int n=6;
+int s=0;
+int e=n-1;
+int mid=s+(e-s)/2;
+while(s<=e){
+if(arr[mid]==key){
+   ans=mid;
+}
+else if(key>arr[mid]){
+    s=mid+1;
+}else{
+    e=mid-1;
+}
+mid=s+(e-s)/2;
+}
+
+}
