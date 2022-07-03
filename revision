@@ -1,0 +1,172 @@
+#include <iostream>
+using namespace std;
+#include <bits/stdc++.h>
+int  main() {
+/*int a=123;
+string s=to_string(a);
+cout<<s<<endl;
+for(auto i:s)
+{
+    cout<<i<<endl;
+
+}
+for(int i=s.length()-1;i>=0;i--){
+    cout<<s[i]<<endl;
+}
+*/
+
+//string to integer
+//stoi(string);
+//integer to string
+//to_string(integer)
+
+/* vector<int> v;
+v.push_back(1);
+v.push_back(2);
+v.push_back(3);
+v.push_back(4);
+v.push_back(5);
+for(auto i:v)
+{
+  cout<<i;
+}
+
+for(auto i=v.begin();i!=v.end();i++)
+{
+
+    cout<<*i;
+}
+cout<<endl;
+//copying vector v in s
+vector<int> s(v);
+for(auto i:s)
+{
+    cout<<i<<endl;
+}
+
+cout<<endl;
+cout<<"map"<<endl;
+
+map<string,int> m;
+m["a"]=1;
+m["b"]=2;
+m["c"]=30;
+m["d"]=4;
+for(auto i:m)
+{
+
+    cout<<i.first<<" "<<i.second<<endl;
+}
+cout<<endl;
+int max=INT_MIN;
+string st=" ";
+for(auto i:m)
+{
+
+    if(i.second>max)
+    {
+        max=i.second;
+        st=i.first;
+    }
+
+}
+cout<<"max"<<" "<<max<<" "<<"char"<<" "<<st;
+*/
+
+/*stack<int> st;
+st.push(1);
+st.push(2);
+st.push(3);
+st.push(4);
+st.push(5);
+while(!st.empty())
+{
+    //cout<<st.top()<<endl;
+    st.pop();
+}
+
+string s="dvfwvjfhweemhjhwe";
+map<char,int> mpp;
+for(int i=0;i<s.length()-1;i++)
+{
+    char z=s[i];
+    mpp[z]++;
+}
+for(auto y:mpp){
+    cout<<y.first<<" "<<y.second<<endl;
+}
+*/
+//palindrome
+/* cout<<endl;
+string s="abcfba";
+int start=0;
+int end=s.length()-1;
+int flag=1;
+while(start<end){
+    if(s[start]!=s[end])
+        flag=0;
+    start++;
+    end--;
+}
+if(flag==0)
+    cout<<"no"<<endl;
+else
+    cout<<"yes"<<endl;
+
+
+cout<<"reverse"<<endl;
+    string z="hello";
+    string rev="";
+    for(int i=z.length();i>=0;i--){
+        char y=z[i];
+        rev=rev+y;
+    }
+    cout<<rev;*/
+
+
+    ///substrings
+
+/*string s="supreetv";
+for(int i=0;i<s.length();i++)
+{
+    string z;
+    for(int j=i;j<s.length();j++)
+    {
+        z=z+s[j];
+        cout<<z<<endl;
+    }
+}
+
+//subsequences(recursion)
+
+
+set<int> st;
+st.emplace(1);//st.insert(1);
+st.emplace(2);
+st.emplace(3);
+st.emplace(4);
+st.emplace(5);
+for(auto i:st){
+    cout<<i<<endl;
+}
+
+
+char a[]="hello";
+char b[]="world";
+strcpy(a,b);
+cout<<a<<endl;
+cout<<b<<endl;
+
+*/
+cout<<"permutation"<<endl;
+//permutation
+string s="bca";
+sort(s.begin(),s.end());
+do{
+    cout<<s<<endl;
+}while(next_permutation(s.begin(),s.end()));
+
+
+
+return 0;
+}
