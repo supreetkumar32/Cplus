@@ -2,6 +2,7 @@
 using namespace std;
 #include <bits/stdc++.h>
 int  main() {
+
 /*int a=123;
 string s=to_string(a);
 cout<<s<<endl;
@@ -37,6 +38,7 @@ for(auto i=v.begin();i!=v.end();i++)
     cout<<*i;
 }
 cout<<endl;
+
 //copying vector v in s
 vector<int> s(v);
 for(auto i:s)
@@ -58,6 +60,8 @@ for(auto i:m)
     cout<<i.first<<" "<<i.second<<endl;
 }
 cout<<endl;
+
+max characters in the string
 int max=INT_MIN;
 string st=" ";
 for(auto i:m)
@@ -96,6 +100,8 @@ for(auto y:mpp){
     cout<<y.first<<" "<<y.second<<endl;
 }
 */
+
+
 //palindrome
 cout<<endl;
 string s="abcfba";
@@ -113,7 +119,7 @@ if(flag==0)
 else
     cout<<"yes"<<endl;
 
-
+//reverse a string
 cout<<"reverse"<<endl;
     string z="hello";
     string rev="";
